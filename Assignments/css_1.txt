@@ -1,0 +1,22 @@
+use git workflow. As you will be modifying some of old code.
+Resources 
+For stock images - pixabay, Pexels
+icons - font awesome / bootstrap icons set
+
+Assignment 1:
+Upgrade notes website add menu on header section with styling.
+
+Assignment 2:
+Upgrade your video library, use css grid for layout, make sure it is responsive.
+
+Assignment 3:
+Create a website for a local business  - a Gym, hotel Or any other of your choice. 
+
+Similar to the previewed site.
+
+create three html pages - index, about, contact
+css and images folder - for resources.
+use proper semantic elements.
+
+you can do this with css or use bootstrap.
+

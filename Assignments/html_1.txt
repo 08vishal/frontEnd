@@ -1,0 +1,33 @@
+Do not focus on styling for now.
+Optional : Install git and try to use git in your workflow, regular commits.
+
+Assignment 1: 
+Setup a local environment: Install VS Code IDE (optional).
+Create a new folder my blog, create an index.html file create basic structure. 
+add proper metatags.
+Open blog_semantic page in browser. Without looking at the source try to replicate blog_semantic page from scratch. 
+reuse the style.css file provided.
+
+open the page using live reload on vs code. 
+
+Assignment 2: 
+Create a basic website for storing useful websites as a list. Try to use nesting inside list.
+
+Assignment 3: 
+Take mywebsite example attached and modify it to use proper semantic elements. Give proper id and class names(non presentational). load the css from external file.
+
+Assignment 4:
+Create a portfolio website. One page resume. With following details.
+Contact information - use your image for dp
+Objective or summary statement.
+Summary of relevant skills. 
+Work experience
+Education.
+Additional information (i.e. volunteer work and special interests)
+
+Assignment 5: 
+Enhance mywebsite, add a page to create an account. Add form elements based on image (create-account-form.PNG)
+
+Assignment 6:
+Create a video library. on landing page display a header and vidoes with thumbnails, on click it should play which can be viewed full screen. 
+embed atleast one youtube video.
