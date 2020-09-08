@@ -1,0 +1,77 @@
+Exercise 1: 
+
+Create a simple webpage, to redirect users to www.google.com if they are under the age of 16. 
+
+Using an external javascript file , Prompt a message "Please enter your age to continue" to users on landing.
+if user enters a number greater than or equal to 16 continue. else give appropriate message and redirect. 
+
+
+Exercise 2: Creating and maintaining js util library
+
+Create a new library myMath.
+provide following functions 
+add,   - adds two numbers
+minus, - subtracts two numbers
+multiply - multiply two numbers
+divide - divide two numbers
+show useful logs for the developers if wrong datatype is used.
+
+assume this library has been in use for some years and now you want to change the name of minus to subtract.
+add subtract in a way that all logic is inside subtract method.
+For back compatibility minus should still work, code in a way that any enhancement if needed you only have to update one place. 
+If someone uses minus method - show a message "minus method is deprecated, please use subtract instead' before returning the result.
+
+
+Exercise 3:
+Add another method power to myMath library.
+It should take two arguments
+  n an integer number, and p another integer number
+  return a value n raised to the power of p.
+
+  solve this using loops. 
+
+
+Exercise 4:
+To promote a new business whenever a transaction is done we want to reward customers with a cashback reward.
+Write a function named getCashbackAmount that
+  - takes one number argument amount
+  - and returns a coupon value based on amount
+  < 20    = 3
+  20 - 50  = 6
+  50 - 75  = 12
+  >75  = 14
+  handle wrong datatypes passed. if it can be parsed don't throw an error.
+
+
+
+Optional Exercise 1 (no submission required) : Javascript can be weird - operation
+try to work out result of each before checking the result in console.
+console.log("" + 0 + 1);
+console.log("" - 2 + 1);
+console.log(true + false);
+console.log(8 / "4");
+console.log("3" * "4");
+console.log(8 + 6 + "px");
+console.log("$" + 1 + 1);
+console.log("42" - 2);
+console.log("49em" - 2);
+console.log(10 / 0);
+console.log("  -99  " + 7);
+console.log("  -10  " - 3);
+console.log(null + 9);
+console.log(undefined + 7);
+console.log(" \n " - 2);
+
+Optional Exercise 2 (no submission required): Javascript can be weird - comparison
+try to work out result of each before checking the result in console.
+console.log("aman" > "chaman");
+console.log("67" > "30000");
+console.log(null > 0);
+console.log(null < 0);
+console.log(null == 0);
+console.log(null === 0);
+console.log(null <= 0); // 
+console.log(null == "\n0\n");
+console.log(null === +"\n0\n");
+console.log(undefined == null);
+console.log(undefined === null);
