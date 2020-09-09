@@ -7,4 +7,5 @@ if(1==1){
     else if( amt>75)ans=14;
      
 }
-document.getElementById("demo").innerHTML=ans;
+
+document.getElementById("demo").innerHTML="<h1>"+ans+"</h1>";
