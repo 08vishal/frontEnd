@@ -1,4 +1,4 @@
-function myFunction() {
+
   var age = prompt("Please enter your Age",15);
   if (age <= 16) {
     document.getElementById("demo").innerHTML =
@@ -8,4 +8,6 @@ function myFunction() {
     document.getElementById("demo").innerHTML =
     "your age is "+age; 
   }
-}
+
+
+
