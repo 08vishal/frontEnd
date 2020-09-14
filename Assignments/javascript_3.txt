@@ -1,0 +1,135 @@
+Exercise 1: 
+  From a Service response we are getting following data. It has status of customers KYC status with their id.
+
+  On our application we want to show count of each status. Create a function to transform following into desired format.
+
+
+  let customersWithoutKYC = [
+    {
+      id: 2,
+      status: 'WIP'
+    },
+    {
+      id: 3,
+      status: 'PendingApproval'
+    },
+    {
+      id: 4,
+      status: 'Rejected'
+    },
+    {
+      id: 5,
+      status: 'PendingApproval'
+    },
+    {
+      id: 25,
+      status: 'WIP'
+    },
+    {
+      id: 35,
+      status: 'PendingApproval'
+    },
+    {
+      id: 45,
+      status: 'WIP'
+    },
+    {
+      id: 55,
+      status: 'PendingApproval'
+    }
+  ];
+  write a function getStatusSummary which takes an array of object with id and status return a object which gives count of each status. Use reduce for this exercise.
+  
+  let result = getStatusSummary(customersWithoutKYC);// {WIP : 3 , PendingApproval : 4 , Rejected: 1  }
+
+  There should not be hardcoding. if a new status is coming in future, getStatusSummary should work without any modification.
+
+
+
+
+
+
+Exercise 2: 
+Given following Constructor function we can construct a new object and call methods on it.
+function PlayableCharacter(name){
+  this.name = name;
+  this.x = 0;
+  this.y = 0;
+  this.moveUp = function () {
+    this.y++;
+    console.log(`${this.name}'s current position x : ${this.x} and y : ${this.y}`);
+  };
+  this.moveDown = function () {
+    this.y--;
+    if(this.y < 0){
+      this.y = 0;
+    }
+    console.log(`${this.name}'s current position x : ${this.x} and y : ${this.y}`);
+  };
+}
+
+let mario = new PlayableCharacter('Mario');
+mario.moveUp();
+mario.moveUp();
+mario.moveDown();
+
+but we want to modify above so that it can be chained like following
+
+mario.moveUp().moveUp().moveUp();
+
+
+
+
+
+Exercise 3: 
+let users = [
+    {firstName: 'Bella', lastName: 'Chao', Gender: 'Female', salary: 120000, birthyear: 1995},
+    {firstName: 'Alex', lastName: 'Campbell', Gender: 'Male', salary: 110000, birthyear: 1982},
+    {firstName: 'Nicolas', lastName: 'M', Gender: 'Male', salary: 100000, birthyear: 1984},
+    {firstName: 'John', lastName: 'K', Gender: 'Male', salary: 90000, birthyear: 1998},
+    {firstName: 'Alexander',lastName: 'L',  Gender: 'Male', salary: 190000, birthyear: 1975},
+    {firstName: 'Jane', lastName: 'M', Gender: 'Female', salary: 190000, birthyear: 1988},
+    {firstName: 'Lucy', lastName: 'N', Gender: 'Female', salary: 150000, birthyear: 1993},
+    {firstName: 'Marco', lastName: 'O', Gender: 'Male', salary: 110000, birthyear: 1990},
+    {firstName: 'Billy', lastName: 'M', Gender: 'Male', salary: 120000, birthyear: 1997}
+];
+
+Write code using array methods to get following
+a) Get a list of all users who are female
+b) Get a new array usersDemographic with name and Gender property only
+c) Sort Users by age oldest to youngest
+d) Sort Users alphabetically by first name
+e) Get amount of total salary of all users
+f) Create a function someoneIslucky that takes a salary argument it returns true if atleast one person has salary more than salary argument;
+g) Create a function everyoneIsHappy that takes minSalary as an argument. it returns true if everyone is earning more than minSalary else false;
+
+
+
+
+
+
+
+
+Exercise 4: From an api we are getting following json data. this will always be summetrical so size of name, salary and other fields will always be same
+var data = {
+  "name": ['john', 'jacob', 'jill', 'Bill', 'Billy'],
+  "salary": [1000, 2000, 4000, 2500, 3400],
+  "joiningYear": [2015, 2019, 2020, null, 1992]
+};
+
+for use in our application we need to transform this to an array with name, salary and joiningYear props.
+
+Transform above json object to desired array format. do it in a way so that in future if extra properties like birthyear also comes from api it should work without modification and result should have birthyear in each object inside result array.
+
+result : [
+  {
+    name: 'john',
+    salary: 1000,
+    joiningYear: 2015
+  },
+  ...
+]
+
+you can use Object.keys(data) to get an array of all keys of an object.
+
+

@@ -23,12 +23,16 @@ var myMath={
             ans=ans*a;
         }
         return ans;
-    }
-    
+    },
+   max: function(a){
+       return Math.max(...a);
+   } 
 
 
 }
 var c=myMath.add(3,5);
+var a=[2,3,5,'78',Infinity];
+console.log(myMath.max(a));
 console.log(c);
 console.log(myMath.divide(3,4));
 console.log(myMath.divide(3,0));

@@ -1,0 +1,67 @@
+Assignment 1: 
+  Create a function getRandomNumber, 
+    it will take two arguments min and max
+    it will return a random number between range
+  
+  Modify  getCashbackAmount from last assignment, instead of fixed value (3, 6, 12 , 14) use getRandomNumber to get a random number in range (1-3 , 4-7, 8 - 12, 13-16).
+
+  function getCashbackAmount(amount) {
+  let couponValue = 0;
+  // validate amount
+  // add logic to get coupon value using getRandomNumber
+  return couponValue;
+  }
+
+
+Assignment 2: 
+  Using Closure create a function createUserInfo that takes username and password arguments returns an object with name and checkPasswordIsCorrect method.
+  password should not be accessible from outside and only through a checkPasswordIsCorrect method.
+  
+  userInfo = createUserInfo('John Doe', 'password123');
+  userInfo.name; // 'John Doe'
+  userInfo.checkPasswordIsCorrect('password123') // true
+
+  we should not be able to modify the password by accessing it directly.
+
+  userInfo.password = 'password';  // this will add new prop to userInfo but actual password should not change;
+
+  the password check should be based on original password value.
+  userInfo.checkPasswordIsCorrect('password')// should be false
+  userInfo.checkPasswordIsCorrect('password123')// true
+
+
+Assignment 3:
+  extend your myMath library and
+  add your own implementation for following Math function
+  Math.max(), //takes n number of arguments and returns maximum of those. if arguments cannot be parsed return NaN.
+
+  myMath.max(2, 3, 67, '89', 98, '99', 23); // output : 99
+  myMath.max(2, Infinity, -Infinity); // output : Infinity
+
+
+
+
+
+Optional Assignment 1: 
+  Create a createMessage function which takes a validCouponValue and returns a message based on following logic
+
+  if the number is divisible by 2 and not 3
+    return 'better luck next time'
+  if the number is divisible by 3 and not 2
+    return 'Please try again later'
+  if the number is divisible by both 2 and 3
+    return a congrautlations message 'Congratulations you have won a coupon of 32 [insert the currency here from a variable]'; 
+  if the number is not divisible by either
+    return  'Today is not your day'
+
+    find out code for INR to be used in javascript and use that as currency value
+
+  function createMessage(couponValue){
+    let message;
+    // validate couponValue
+    // add logic to generate a message using getCasbackAmount
+    return message;
+  }
+
+  Call above method 100 times and log output ;
+  for(let i = 0; i < 100; i++ ){console.log(createMessage(getCashbackAmount(i)))}
