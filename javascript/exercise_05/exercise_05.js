@@ -3,7 +3,8 @@ console.log("inside");
 
 function createUserInfo(a,b){
     function checkPasswordIsCorrect(password){
-        if(password==='password123')return true;
+        let pass='password123';
+        if(password===pass)return true;
         return false;
     }
     return{
